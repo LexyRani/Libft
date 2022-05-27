@@ -6,11 +6,12 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 12:58:12 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/27 18:40:25 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/05/27 19:11:54 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 
 int	ft_count_strs(const char *s ,char c)
 {
@@ -26,13 +27,13 @@ int	ft_count_strs(const char *s ,char c)
 		if (s[j] == c && s[j + 1] != c && s[j + 1] != '\0')
 		{
 			i++;
-			printf("i:%d\n",i);
-			printf("j:%d\n",j);
+			//printf("i:%d\n",i);
+			//printf("j:%d\n",j);
 		}
 		j++;
 		
 	}
-	printf("i:%d\n",i);
+	//printf("i:%d\n",i);
 	return(i); // nombre de mots
 }
 
@@ -60,7 +61,17 @@ char	*word_extraction(const char *str, char c)
 	//printf("mots:%s\n",word);
 	return(word);
 }
-
+void	ft_free( char **tab)
+{
+	int	i;
+	
+	i = 0;
+	while(tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+}
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;
@@ -84,8 +95,11 @@ char	**ft_split(char const *s, char c)
 		{
 			tab[j] = word_extraction(s + i, c);
 			if(tab[j] == 0)
+			{
+				ft_free(tab);
 				free(tab);
 				return(0);
+			}
 			i++;
 			j++;
 			while (s[i] && s[i] != c)
@@ -96,7 +110,7 @@ char	**ft_split(char const *s, char c)
 	return (tab);	
 }
 
-int main()
+/*int main()
 {
 	int 	i;
 	char **strs = ft_split("  Je m'appelle Alix CERALINE",' ');
@@ -111,4 +125,4 @@ int main()
 	//printf("Split:%s\n",* ft_split("Je   m'appelle Alix CERALINE",' '));
 	//printf("Split:%s\n",* ft_split("        aaaa",' '));
 	return(0);
-}
+}*/
