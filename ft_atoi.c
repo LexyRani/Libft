@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 14:50:23 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/11 11:45:02 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/05/30 11:27:25 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	ft_atoi(const char *nptr)
 	}	
 	return (nb * sign);
 }
+
 /*
 int main()
 {

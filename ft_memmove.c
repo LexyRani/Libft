@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:41:55 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/20 16:20:34 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/03 17:53:39 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,16 +41,20 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/* int main()
+/*
+int main()
 {
-    char src [] = "source";
-    char dest [] = "destination";
-    char src1 [] = "source";
-    char dest1 [] = "destination";
+    // char src [] = "source";
+    // char dest [] = "destination";
+    // char src1 [] = "source";
+    // char dest1 [] = "destination";
 
-    printf("%s\n", src);
-    printf("%s\n", dest);
+    // printf("%s\n", src);
+    // printf("%s\n", dest);
 
-    ft_memmove((char *)dest, (char *)src, '\0');
-    memmove(dest1,src1, '\0');
-*/
+    // ft_memmove((char *)dest, (char *)src, '\0');
+    // memmove(dest1,src1, '\0');
+	char str[] = "aabbccdd";
+	ft_memmove(str+2, str, 6);
+	printf("%s\n", str);
+}*/

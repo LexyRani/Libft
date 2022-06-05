@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:54:46 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/11 11:54:47 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/03 17:45:50 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 
-	i = 0 ;
 	if (!dst || !src)
 		return (0);
+	i = 0 ;
 	if (size > 0)
 	{
 		while (src[i] && i < (size - 1))

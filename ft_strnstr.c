@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:41:30 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/20 16:02:33 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/02 19:13:32 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	unsigned int	i;
 	unsigned int	j;
 
+	if (!big || !little)
+		return (0);
 	i = 0;
 	if (little[0] == '\0')
 		return ((char *)big);
-	if (!big || !little)
-		return (0);
 	while (big[i] != '\0' && i < len)
 	{
 		j = 0;
@@ -33,9 +33,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-/*int main()
+/*
+int main()
 {
-	printf("%s\n", strnstr("lalalililu","li", 10));
-	printf("%s\n", ft_strnstr("lalalililu","li", 10));
+	char big[] = "lalalililu";
+	char *little = NULL;
+	char *str = ft_strnstr(big, little, 10);
+	// printf("%s\n", strnstr("lalalililu","li", 10));
+	printf("%s\n", str);
 	return(0);
 }*/

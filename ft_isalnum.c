@@ -6,14 +6,11 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 11:01:30 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/11 11:45:32 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/02 18:39:03 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_isdigit(int c);
-int	ft_isalpha(int c);
 
 int	ft_isalnum(int c)
 {

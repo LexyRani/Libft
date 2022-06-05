@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 13:22:33 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/24 16:38:14 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/03 17:49:17 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,14 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_memset (ptr, 0, (nmemb * size));
 	return (ptr);
 }
-/*int	main()
+/*
+int	main()
 {
-	printf("[%p]\n", calloc(2147483647, 2));
-	printf("[%p]\n", ft_calloc(2147483647, 2));
+	// // printf("[%p]\n", calloc(2147483647, 2));
+	// printf("[%p]\n", ft_calloc(2147483647, 1));
 	char	*ptr = "aaaaaa"; 
 	printf("%s\n", ptr);
-	ptr = ft_calloc(2,3);
+	ptr = ft_calloc(2147483647,3);
 	printf("%s\n", ptr);
 	return(0);
 }*/

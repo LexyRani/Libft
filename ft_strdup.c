@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 13:26:25 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/27 18:42:18 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/05/30 11:59:28 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ char	*ft_strdup(const char *s)
 	int		size;
 	int		i;
 	char	*str;
-	
+
 	if (!s)
 		return (0);
 	size = ft_strlen (s);
 	str = malloc (sizeof(char) * (size + 1));
 	i = 0;
-	if(!str)
-		return(0);
+	if (!str)
+		return (0);
 	while (s[i])
 	{
 		str[i] = s[i];

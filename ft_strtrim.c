@@ -6,13 +6,13 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 12:57:55 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/23 16:35:10 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/05/30 17:56:58 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_checkset(const char c, const char *set)
+static int	ft_checkset(const char c, const char *set)
 {
 	int	i;
 
@@ -26,7 +26,7 @@ int	ft_checkset(const char c, const char *set)
 	return (0);
 }
 
-int	ft_len(const char *s1, const char *set)
+static int	ft_len(const char *s1, const char *set)
 {
 	int	start;
 	int	end;

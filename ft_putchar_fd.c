@@ -6,8 +6,13 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 12:58:35 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/19 12:59:00 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/05/30 11:18:53 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write (fd, &c, 1);
+}
