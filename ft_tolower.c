@@ -6,17 +6,17 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 14:41:27 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/11 11:56:17 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/05 11:26:11 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int character)
+int	ft_tolower(int c)
 {
-	if (character >= 65 && character <= 90)
-		return (character + 32);
-	return (character);
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	return (c);
 }
 
 /* int     main()

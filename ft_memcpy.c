@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:42:00 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/03 17:29:09 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/03 21:25:24 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	char	*s;
-	char	*d;
+	size_t				i;
+	unsigned char		*s;
+	unsigned char		*d;
 
-	s = (char *) src;
-	d = (char *) dest;
+	s = (unsigned char *) src;
+	d = (unsigned char *) dest;
 	i = 0;
 	while (i < n)
 	{

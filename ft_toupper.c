@@ -6,17 +6,17 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 12:18:10 by aceralin          #+#    #+#             */
-/*   Updated: 2022/05/11 11:57:13 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/05 11:21:49 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int character)
+int	ft_toupper(int c)
 {
-	if (character >= 97 && character <= 122)
-		return (character - 32);
-	return (character);
+	if (c >= 97 && c <= 122)
+		return (c - 32);
+	return (c);
 }
 
 /* int	main()
