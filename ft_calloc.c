@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 13:22:33 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/03 17:49:17 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:11:52 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	char	*ptr;
+	void	*ptr;
 
-	if ((int)nmemb <= 0 || (int)size <= 0)
+	if (size != 0 && (((int)nmemb * size) / size) != nmemb)
 		return (NULL);
-	ptr = malloc (nmemb * size);
+	ptr = (void *) malloc(nmemb * size);
 	if (!ptr)
-		return (0);
-	ft_memset (ptr, 0, (nmemb * size));
+		return (NULL);
+	ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
+
 /*
 int	main()
 {
